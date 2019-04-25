@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
