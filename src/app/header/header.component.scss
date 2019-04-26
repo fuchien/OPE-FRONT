@@ -10,6 +10,12 @@
     padding: 0 50px; 
     box-shadow: 0 1px 1px rgba(0,0,0,.25);
 
+    img {
+        margin-top: 10px;
+        max-height: 60px;
+        cursor: pointer;
+    }
+
     nav {
         display: flex;
         justify-content: flex-end;
@@ -120,6 +126,15 @@
                 &:hover .itemLink {
                     color: #fff;
                 }
+
+            }
+
+            .actived .itemLink {
+                color: #fff;
+            }
+
+            .actived:before {
+                width: 100%;
             }
         }
 
