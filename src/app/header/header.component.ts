@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public navList: {}[] = [
+  public navList: {text: string, subList?: {}[]}[] = [
     {
       text: `Página inicial`
     },
@@ -53,6 +53,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.handleNavClick(this.navList[0].text);
   }
 
   handleNavClick (link: string): void {
