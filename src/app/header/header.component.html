@@ -1,5 +1,5 @@
 <div class="container">
-  <img src="./assets/images/logo.png" />
+  <img routerLink='/' src="./assets/images/logo.png" />
   <nav>
     <ul class="menu" [class.opened]="menuOpened">
       <li class="item" *ngFor="let item of navList" [class.actived]="navClicked === item.text">
