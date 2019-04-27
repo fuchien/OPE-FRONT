@@ -3,7 +3,7 @@
   <nav>
     <ul class="menu" [class.opened]="menuOpened">
       <li class="item" *ngFor="let item of navList" [class.actived]="navClicked === item.text">
-        <a class="itemLink" (click)="handleNavClick(item.text)">{{ item.text }}</a>
+        <a class="itemLink" (click)="handleNavClick(item.text, item.route)">{{ item.text }}</a>
         <ul class="subMenu" *ngIf="item.subList">
           <li class="subItem" *ngFor="let subItem of item.subList">
             <a class="subItemLink">{{ subItem.text }}</a>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public navList: {text: string, subList?: {}[]}[] = [
+  public navList: { text: string, route?: string, subList?: {}[] }[] = [
     {
-      text: `Página inicial`
+      text: `Página inicial`,
+      route: ``
     },
     {
       text: `Sobre Nós`,
@@ -49,18 +52,22 @@ export class HeaderComponent implements OnInit {
 
   public navClicked: string = '';
   public menuOpened: boolean = false;
-
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) {
+    this.router.navigate(['']);
+  }
 
   ngOnInit() {
     this.handleNavClick(this.navList[0].text);
   }
 
-  handleNavClick (link: string): void {
+  handleNavClick(link: string, route: string = this.router.url): void {
     this.navClicked = link;
+    this.router.navigate([route]);
   }
 
-  handleMenu (): void {
+  handleMenu(): void {
     this.menuOpened = !this.menuOpened;
   }
 
