@@ -4,7 +4,7 @@ import { Routes } from '@angular/router';
 
 export const ROUTES: Routes = [
     {
-        path: 'sobre', component: AboutUsComponent
+        path: '', component: AboutUsComponent
     },
     {
         path: '**', component: NotFoundComponent
