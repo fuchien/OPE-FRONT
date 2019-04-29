@@ -2,7 +2,10 @@ import { Routes } from '@angular/router';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 export const ROUTES: Routes = [
     {
-        path: '', loadChildren: `./home/home.module#HomeModule`,
+        path: '', redirectTo:'/inicio', pathMatch: 'full',
+    },
+    {
+        path: 'inicio', loadChildren: `./home/home.module#HomeModule`,
     },
     {
         path: 'sobre', loadChildren: `./about-us/about-us.module#AboutUsModule`,
