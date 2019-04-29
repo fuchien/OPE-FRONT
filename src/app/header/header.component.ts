@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       text: `Sobre Nós`,
+      route: `sobre`,
       subList: [
         {
           text: `Quem somos nós?`
