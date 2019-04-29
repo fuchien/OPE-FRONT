@@ -48,7 +48,7 @@ export class HeaderComponent implements OnInit {
     {
       text: `Contato`
     }
-  ]
+  ];
 
   public navClicked: string = '';
   public menuOpened: boolean = false;
