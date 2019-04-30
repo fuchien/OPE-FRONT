@@ -8,6 +8,9 @@ import { ROUTES } from './informative.routes';
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES)
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class InformativeRoutingModule { }
