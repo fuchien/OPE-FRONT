@@ -45,10 +45,12 @@ export class HeaderComponent implements OnInit {
       ]
     },
     {
-      text: `Informativos`
+      text: `Informativos`,
+      route: `informativos`
     },
     {
-      text: `Contato`
+      text: `Contato`,
+      route: `contato`
     }
   ];
 
