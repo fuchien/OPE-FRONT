@@ -51,8 +51,8 @@ export class HeaderComponent implements OnInit {
     }
   ];
 
-  public navClicked: string = '';
-  public menuOpened: boolean = false;
+  public navClicked = '';
+  public menuOpened = false;
   constructor(
     private router: Router,
   ) {
