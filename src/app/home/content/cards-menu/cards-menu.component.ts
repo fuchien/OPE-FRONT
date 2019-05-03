@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CardsMenuComponent implements OnInit {
 
   public cards = [
-    { icon: 'teste', title: 'Responsive design', description: 'Lorem Ipsum' },
-    { icon: 'teste', title: 'Responsive design', description: 'Lorem Ipsum' },
-    { icon: 'teste', title: 'Responsive design', description: 'Lorem Ipsum' },
-    { icon: 'teste', title: 'Responsive design', description: 'Lorem Ipsum' },
+    { icon: 'teste', title: 'Responsive design', description: ' ' },
+    { icon: 'teste', title: 'Responsive design', description: ' ' },
+    { icon: 'teste', title: 'Responsive design', description: ' ' },
+    { icon: 'teste', title: 'Responsive design', description: ' ' },
   ];
 
   constructor() { }
