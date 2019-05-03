@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class WeDoCardsComponent implements OnInit {
 
   public cards = [
-    { title: `Photography`, description: `Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Cap`, button: `Learn more` },
-    { title: `Photography`, description: `Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Cap`, button: `Learn more` },
-    { title: `Photography`, description: `Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Cap`, button: `Learn more` }
+    { title: `Photography`, description: `Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.`
+    , button: `Learn more` },
+    { title: `Photography`, description: `Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.`
+    , button: `Learn more` },
+    { title: `Photography`, description: `Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.`
+    , button: `Learn more` }
   ];
 
   constructor() { }

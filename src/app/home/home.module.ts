@@ -11,6 +11,7 @@ import { CardMenuComponent } from './content/cards-menu/card-menu/card-menu.comp
 import { ContentComponent } from './content/content.component';
 import { WeDoCardsComponent } from './content/we-do-cards/we-do-cards.component';
 import { WeDoCardComponent } from './content/we-do-cards/we-do-card/we-do-card.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WeDoCardComponent } from './content/we-do-cards/we-do-card/we-do-card.c
     CardMenuComponent,
     ContentComponent,
     WeDoCardsComponent,
-    WeDoCardComponent
+    WeDoCardComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
