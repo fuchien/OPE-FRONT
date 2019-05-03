@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    ul {
+        flex: 1;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            flex: 1 0;
+            margin: 5px;
+            min-height: 250px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
