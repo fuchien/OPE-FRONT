@@ -28,6 +28,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       text: `Ciclos de Atuação`,
+      route: `ciclos-de-atuacao`,
       subList: [
         {
           text: `Educação Infantil`
@@ -44,10 +45,12 @@ export class HeaderComponent implements OnInit {
       ]
     },
     {
-      text: `Informativos`
+      text: `Informativos`,
+      route: `informativos`
     },
     {
-      text: `Contato`
+      text: `Contato`,
+      route: `contato`
     }
   ];
 
