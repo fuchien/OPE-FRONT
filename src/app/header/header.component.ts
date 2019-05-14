@@ -69,6 +69,7 @@ export class HeaderComponent implements OnInit {
   handleNavClick(link: string, route: string = this.router.url): void {
     this.navClicked = link;
     this.router.navigate([route]);
+    this.menuOpened = false;
   }
 
   handleMenu(): void {

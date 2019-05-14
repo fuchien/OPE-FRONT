@@ -9,33 +9,34 @@
         margin-top: 20px;
         width: 100%;
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
 
         li {
-            width: 30%;
+            flex: 1 0 280px;
             min-height: 175px;
             display: flex;
             flex-flow: column;
             padding: 15px;
             justify-content: space-between;
-            
+
             h3 {
                 font-size: 17px;
             }
-        
+
             p {
                 font-size: 13px;
                 line-height: 1.6;
             }
-        
+
             button {
                 padding: 8px 16px;
                 background-color: #50cfa4;
                 transition: all .3s linear;
                 color: #fff;
                 border: 0;
-        
+
                 &:hover {
                     border: 1px solid #50cfa4;
                     background-color: transparent;
