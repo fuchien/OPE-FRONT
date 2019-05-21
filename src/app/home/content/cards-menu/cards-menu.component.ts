@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/shared/http-service/http.service';
 
 @Component({
   selector: 'app-cards-menu',
@@ -7,16 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsMenuComponent implements OnInit {
 
-  public cards = [
-    { icon: 'teste', title: 'Responsive design', description: ' ' },
-    { icon: 'teste', title: 'Responsive design', description: ' ' },
-    { icon: 'teste', title: 'Responsive design', description: ' ' },
-    { icon: 'teste', title: 'Responsive design', description: ' ' },
-  ];
+  public cards = [];
 
-  constructor() { }
+  constructor(
+    private http: HttpService
+  ) { }
 
   ngOnInit() {
+    this.http.getData().subscribe(
+      (data: any) => this.cards = data,
+      (err: any) => console.error(err)
+      );
   }
 
 }
