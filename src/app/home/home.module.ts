@@ -12,6 +12,7 @@ import { ContentComponent } from './content/content.component';
 import { WeDoCardsComponent } from './content/we-do-cards/we-do-cards.component';
 import { WeDoCardComponent } from './content/we-do-cards/we-do-card/we-do-card.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { HttpService } from '../shared/http-service/http.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     CommonModule,
     HomeRoutingModule,
     SharedModule
+  ],
+  providers:[
+    HttpService
   ]
 })
 export class HomeModule { }

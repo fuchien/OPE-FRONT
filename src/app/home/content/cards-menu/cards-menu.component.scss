@@ -12,19 +12,33 @@
         align-items: center;
 
         li {
-            flex: 1;
+            flex: 1 0 25%;
             margin: 15px 0;
             min-height: 250px;
             display: flex;
             flex-flow: column;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 5px;
 
-            &:hover {
-                background-color: #000;
-                color: #fff;
+            img {
+              max-height: 150px;
+            }
+
+            .example-header-image {
+              background-image: url('../../../../assets/images/logo/logo.jpg');
+              background-size: cover;
+            }
+
+            .example-card {
+              max-width: 400px;
+              margin: 5px;
+
             }
         }
     }
+}
+
+mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+  background-color: #50cfa4;
 }
