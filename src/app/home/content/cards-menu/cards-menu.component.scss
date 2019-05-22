@@ -40,6 +40,17 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              button.mat-flat-button.mat-primary{
+                background-color: #50cfa4;
+                transition: all .3s linear;
+                color: #fff;
+                border: 0;
+                &:hover {
+                    border: 1px solid #50cfa4;
+                    background-color: transparent;
+                    color: #50cfa4;
+                }
+              } 
             }
         }
     }
