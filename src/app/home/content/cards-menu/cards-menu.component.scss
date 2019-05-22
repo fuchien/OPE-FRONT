@@ -1,3 +1,5 @@
+
+
 .container {
     width: 100%;
     display: flex;
@@ -41,4 +43,27 @@
 
 mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
   background-color: #50cfa4;
+}
+
+
+@media(max-width: 950px) {
+  .container {
+    ul {
+      li {
+        flex: 1 0 45%;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 550px) {
+  .container {
+    ul {
+      justify-content: center;
+      li {
+        flex: 1 0 100%;
+      }
+    }
+  }
 }

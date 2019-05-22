@@ -6,8 +6,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 
-import { HttpService } from './http-service/http.service';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpService } from './http-service/http.service';
+// import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,14 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    // HttpClientModule
   ],
   exports:[
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    // HttpClientModule
   ],
   providers: [
-    HttpService,
+    // HttpService,
   ]
 })
 export class SharedModule { }

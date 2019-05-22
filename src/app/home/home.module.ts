@@ -13,6 +13,7 @@ import { WeDoCardsComponent } from './content/we-do-cards/we-do-cards.component'
 import { WeDoCardComponent } from './content/we-do-cards/we-do-card/we-do-card.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HttpService } from '../shared/http-service/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpService } from '../shared/http-service/http.service';
   imports: [
     CommonModule,
     HomeRoutingModule,
+    HttpClientModule,
     SharedModule
   ],
   providers:[

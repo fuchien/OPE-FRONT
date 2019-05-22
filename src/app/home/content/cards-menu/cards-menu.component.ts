@@ -18,7 +18,7 @@ export class CardsMenuComponent implements OnInit {
     this.http.getData().subscribe(
       (data: any) => this.cards = data,
       (err: any) => console.error(err)
-      );
+    );
   }
 
 }
